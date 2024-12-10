@@ -40,3 +40,29 @@ $(document).ready(function () {
     duration: 1000,
   });
 });
+
+/* =========================================================
+        Sticky Header
+    =========================================================*/
+$(window).scroll(function () {
+  var scrollTop = $(this).scrollTop();
+  if (scrollTop > 100) {
+    $(".header").addClass("sticky");
+    $(".resp-none").addClass("scroll-none");
+  } else {
+    $(".header").removeClass("sticky");
+    $(".resp-none").removeClass("scroll-none");
+  }
+});
+
+$(document).ready(function () {
+  $("#headerNavbarDropdown").on("show.bs.collapse", function () {
+    // Change to close icon when expanded
+    $("#menuIcon").removeClass("fa-bars").addClass("fa-xmark");
+  });
+
+  $("#headerNavbarDropdown").on("hide.bs.collapse", function () {
+    // Change back to menu icon when collapsed
+    $("#menuIcon").removeClass("fa-xmark").addClass("fa-bars");
+  });
+});
