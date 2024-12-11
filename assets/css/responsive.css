@@ -134,6 +134,10 @@
         width: 177px;
     }
 
+    .blog-details-img img {
+        height: 300px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -293,10 +297,6 @@
         margin-bottom: 26px;
     }
 
-    .banner-content {
-        height: 194px;
-    }
-
     .breadcrumb {
         gap: 4px;
     }
@@ -390,6 +390,10 @@
         width: 48px;
         height: 48px;
         font-size: 22px;
+    }
+
+    .banner-content {
+        padding: 40px 12px;
     }
 
 }

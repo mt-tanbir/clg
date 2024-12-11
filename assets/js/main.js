@@ -46,7 +46,7 @@ $(document).ready(function () {
     =========================================================*/
 $(window).scroll(function () {
   var scrollTop = $(this).scrollTop();
-  if (scrollTop > 100) {
+  if (scrollTop > 0) {
     $(".header").addClass("sticky");
     $(".resp-none").addClass("scroll-none");
   } else {
